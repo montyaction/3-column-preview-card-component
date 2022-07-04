@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+
+:root {
+    /* Primary */
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --v-dark-cyan: hsl(179, 100%, 13%);
+    
+    /* Neutral */
+    --transparent-white: hsla(0, 0%, 100%, 0.75);   /* (paragraphs) */
+    --v-light-gray: hsl(0, 0%, 95%);    /* (background, headings, buttons) */
+}
+
+:root {
+    --mobile-width: 375px;
+    --desktop: 1440px;
+    
+    --font-size: 15px;
+}
+
+/* CSS Rest */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--v-light-gray) !important;
+    color: var(--transparent-white);
+    font-family: "Lexend Deca", sans-serif;
+    font-size: var(--font-size);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    line-height: 1.6;
+}
+
+.header {
+    position: relative;
+}
+
+.visuallu-hidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.container {
+    width:  min(86.4%, 57.5rem);
+    margin: 5.525rem auto;
+}
+
+.heading {
+    color: var(--v-light-gray);
+    font-family: "Big Shoulders Display", cursive;
+    font-weight: 700;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    display: block;
+    margin: 1.5rem 0 1rem;
+}
+
+/* Columns */
+.column {
+    padding: 3rem;
+}
+
+.sedan {
+    background-color: var(--bright-orange);
+    border-radius: 10px 10px 0 0;
+}
+
+.suv {
+    background-color: var(--v-dark-cyan);
+}
+
+.luxury {
+    background-color: var(--dark-cyan);
+}
+
+/* Button */
+.learn-btn {
+    background-color: var(--v-light-gray);
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 40px;
+    font-size: 0.9rem;
+    margin-top: 2rem;
+    letter-spacing: 0.5px;
+    border: 2px solid var(--v-light-gray);
+}
+
+.learn-btn:hover {
+    cursor: pointer;
+    color: var(--v-light-gray);
+    background-color: transparent;
+}
+
+.sedan-color {
+  color: var(--bright-orange);
+}
+
+.suv-color {
+  color: var(--dark-cyan);
+}
+
+.luxury-color {
+  color: var(--v-dark-cyan);
+}
+
+/* Footer Section  */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: var(--dark-cyan);
+}
+
+.attribution a {
+  color: var(--vdark-cyan);
+}
+
+/* Media Queries */
+@media screen and (min-width: 1100px) {
+    .container {
+        display: flex;
+        flex-direction: row;
+        margin-top: 10.75rem;
+    }
+
+    .sedan {
+        border-radius: 10px 0 0 10px;
+    }
+
+    .luxury {
+        border-radius: 0 10px 10px 0;
+    }
+
+    .learn-btn {
+        margin-top: 5rem;
+    }
+
+    footer {
+        position: absolute;
+        bottom: 0;
+    }
+}

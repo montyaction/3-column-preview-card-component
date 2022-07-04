@@ -30,8 +30,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/montyaction/3-column-preview-card-componentin)
-- Live Site URL: [Add live site URL here](https://gentle-horse-bbd727.netlify.app)
+- Solution URL: [Add solution URL here](https://github.com/montyaction/3-column-preview-card-component)
+- Live Site URL: [Add live site URL here](https://jade-griffin-de7365.netlify.app/)
 
 ## My process
 
